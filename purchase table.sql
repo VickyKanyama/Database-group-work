@@ -26,10 +26,11 @@ ALTER TABLE purchase CHANGE COLUMN status purchase_status ENUM('pending', 'compl
 
 UPDATE purchase SET purchase_status="complete" WHERE medicine_ID=1;
 
-SELECT DISTINCT medicine_ID,status FROM purchase;
+SELECT DISTINCT medicine_ID,purchase_status FROM purchase;
 
 SELECT p.*,m.* FROM purchase p
 INNER JOIN medicine m ON p.medicine_ID=m.medicine_ID
 ORDER BY p.purchase_date DESC;
 
-CREATE INDEX purchase_index ON purchase(medicine_ID, purchase_status); SELECT * FROM purchase WHERE medicine_ID = 2 AND purchase_status = 'complete';
+CREATE INDEX purchase_index ON purchase(medicine_ID, purchase_status); 
+SELECT * FROM purchase WHERE medicine_ID = 2 AND purchase_status = 'complete';
