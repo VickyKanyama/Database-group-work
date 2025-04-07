@@ -8,18 +8,21 @@ CREATE TABLE Supplier (
 
 INSERT INTO Supplier (Sup_name, Phone, Email) 
 VALUES 
-('Alpha Textiles', '0712345678', 'alpha@textiles.com'),
-('Beta Supplies', '0723456789', 'beta@supplies.com'),
-('Gamma Fabrics', '0734567890', 'gamma@fabrics.com'),
-('Delta Clothing', '0745678901', 'delta@clothing.com');
+('Alpha Herbs', '0712345678', 'alpha@gmail.com'),
+('Beta Pharmacy', '0723456789', 'beta@gmail.com.com'),
+('Gamma Global Pharmacy LTD', '0734567890', 'gamma@gmail.com'),
+('Delta Medice Suppliers', '0745678901', 'delta@gmail.com');
 
 SELECT * FROM Supplier;
 
 UPDATE Supplier
 SET Phone = '0791234567'
-WHERE Sup_name = 'Beta Supplies';
+WHERE Sup_name = 'Beta Pharmacy';
 
 DELETE FROM Supplier
-WHERE Email = 'delta@clothing.com';
+WHERE Email = 'delta@gmail.com';
 
 SELECT Sup_name, Email FROM Supplier;
+
+CREATE INDEX supplier_index ON supplier(Sup_name, email); 
+SELECT * FROM users WHERE username = 'Beta pharmarcy' AND email = 'beta@gmail.com
