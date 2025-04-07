@@ -9,7 +9,7 @@ CREATE TABLE Supplier (
 INSERT INTO Supplier (Sup_name, Phone, Email) 
 VALUES 
 ('Alpha Herbs', '0712345678', 'alpha@gmail.com'),
-('Beta Pharmacy', '0723456789', 'beta@gmail.com.com'),
+('Beta Pharmacy', '0723456789', 'beta@gmail.com'),
 ('Gamma Global Pharmacy LTD', '0734567890', 'gamma@gmail.com'),
 ('Delta Medice Suppliers', '0745678901', 'delta@gmail.com');
 
@@ -24,5 +24,5 @@ WHERE Email = 'delta@gmail.com';
 
 SELECT Sup_name, Email FROM Supplier;
 
-CREATE INDEX supplier_index ON supplier(Sup_name, email); 
-SELECT * FROM users WHERE username = 'Beta pharmarcy' AND email = 'beta@gmail.com
+CREATE INDEX supplier_index ON Supplier(Sup_name, Email); 
+SELECT * FROM Supplier WHERE Sup_name = 'Beta Pharmarcy' AND Email = 'beta@gmail.com';
