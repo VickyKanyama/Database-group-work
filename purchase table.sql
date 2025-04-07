@@ -6,7 +6,7 @@ CREATE TABLE purchase(purchase_ID INT AUTO_INCREMENT NOT NULL,
     purchase_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     quantity INT NOT NULL,
     status ENUM('pending','complete') NOT NULL,
-    PRIMARY KEY(purchase_ID)),
+    PRIMARY KEY(purchase_ID),
     FOREIGN KEY (medicine_ID) REFERENCES medicine(medicine_ID) ON DELETE CASCADE,
     FOREIGN KEY (supplier_ID) REFERENCES supplier(supplier_ID) ON DELETE CASCADE );
 INSERT INTO purchase(medicine_ID,supplier_ID,quantity,status)
