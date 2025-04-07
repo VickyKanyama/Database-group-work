@@ -4,11 +4,11 @@ Use  MedicineStock;
 
 Create table Medicine(
 Medicine_ID Char(4),
-Medicine_Name varchar(150),
+Medicine_Name varchar(20),
 Date_Supplied date,
 Expiry_Date date,
-Quantity int,
-Price int,
+Quantity_Available int,
+Price dec(10.2),
 primary key (Medicine_ID),
 Supplier_Name varchar(100));
 
