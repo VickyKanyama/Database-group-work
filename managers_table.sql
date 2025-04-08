@@ -18,4 +18,5 @@ SET phone_number = '0746610394'
 WHERE manager_id = 1;
 
 DELETE FROM managers
-WHERE manager_id = 2; CREATE INDEX manager_index ON managers(manager_name, email); SELECT * FROM managers WHERE manager_name = 'john Were' AND email = 'john.were@cityhospital.org';
+WHERE manager_name = 'Jane Smith';
+CREATE INDEX manager_index ON managers(manager_name, email); SELECT * FROM managers WHERE manager_name = 'john Were' AND email = 'john.were@cityhospital.org';
