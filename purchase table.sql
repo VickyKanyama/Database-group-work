@@ -17,8 +17,8 @@ VALUES(1,1,300,'pending'),
       (3,3,100,'complete'),
       (2,2,700,'complete'),
       (4,4,250,'complete');
-SELECT p.purchase_ID,m.medicine_name,p.purchase_date,p.quantity,m.price,p.status ,(m.price*p.quantity) AS total_price FROM purchase p
-INNER JOIN medicine m ON p.medicine_ID=m.medicine_ID
+SELECT p.purchase_ID,m.medicine_name,p.purchase_date,p.quantity,m.price,p.status ,(m.Price_for_each*p.quantity) AS total_price FROM purchase p
+INNER JOIN Medicine m ON p.medicine_ID=m.medicine_ID
 WHERE m.medicine_name="Aspirin";
 
 DELETE FROM purchase WHERE medicine_ID=3;
@@ -30,7 +30,7 @@ UPDATE purchase SET purchase_status="complete" WHERE medicine_ID=1;
 SELECT DISTINCT medicine_ID,purchase_status FROM purchase;
 
 SELECT p.*,m.* FROM purchase p
-INNER JOIN medicine m ON p.medicine_ID=m.medicine_ID
+INNER JOIN Medicine m ON p.medicine_ID=m.medicine_ID
 ORDER BY p.purchase_date DESC;
 
 CREATE INDEX purchase_index ON purchase(medicine_ID, purchase_status); 
