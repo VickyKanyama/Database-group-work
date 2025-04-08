@@ -24,5 +24,4 @@ Select *from Medicine;
 
 drop table Medicine;
 
-Alter table Medicine
-Add Constraint FK_Medicine_Supplier Foreign Key (Supplier_ID) references Medicine(Medicine_ID)
+
