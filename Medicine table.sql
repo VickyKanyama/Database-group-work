@@ -4,7 +4,7 @@ USE MedicineStock;
 
 CREATE TABLE Medicine(
 Medicine_ID INT AUTO_INCREMENT NOT NULL,
-Medicine_Name VARCHAR(255),
+Medicine_Name VARCHAR(100),
 Date_Supplied DATE,
 Expiry_Date DATE NOT NULL,
 Quantity_available INT NOT NULL,
