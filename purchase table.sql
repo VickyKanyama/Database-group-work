@@ -1,6 +1,7 @@
 CREATE DATABASE purchase;
 USE purchase;
-CREATE TABLE purchase(purchase_ID INT AUTO_INCREMENT NOT NULL,
+CREATE TABLE purchase(
+    purchase_ID INT AUTO_INCREMENT NOT NULL,
     medicine_ID INT NOT NULL,
     supplier_ID INT NOT NULL,
     purchase_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
