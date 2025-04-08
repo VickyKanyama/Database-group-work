@@ -14,10 +14,10 @@ PRIMARY KEY (Medicine_ID)
 
 INSERT INTO Medicine(Medicine_Name,Date_Supplied,Expiry_Date,Quantity_available,Price_for_each)
 VALUES
-  ('Asprin','2026-6-26',150,150.00),
-  ('Cetrizine','2025-12-5',370,48.00),
-  ('Dextromethorphan','2027-3-6',100,900.00),
-  ('Fluconazole','2027-7-20',42,250.00);
+  ('Asprin','2024-6-26','2026-6-26',150,150.00),
+  ('Cetrizine','2024-12-5','2027-12-26',370,48.00),
+  ('Dextromethorphan','2023-3-6','2028-3-6',100,900.00),
+  ('Fluconazole','2020-7-20','2025-7-20',42,250.00);
 
 UPDATE Medicine
 SET Quantity_Available = 200,
