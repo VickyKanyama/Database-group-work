@@ -1,8 +1,8 @@
-Create Database MedicineStock;
+CREATE DATABASE MedicineStock;
 
-Use  MedicineStock;
+USE MedicineStock;
 
-Create table Medicine(
+CREATE TABLE Medicine(
 Medicine_ID INT AUTO_INCREMENT NOT NULL,
 Medicine_Name VARCHAR(255),
 Date_Supplied DATE,
@@ -12,15 +12,15 @@ Price_for_each dec(10,2),
 PRIMARY KEY (Medicine_ID)
   );
 
-Insert into Medicine(Medicine_Name,Date_Supplied,Expiry_Date,Quantity_available,Price_for_each)
-  Values
+INSERT INTO Medicine(Medicine_Name,Date_Supplied,Expiry_Date,Quantity_available,Price_for_each)
+VALUES
   ('Asprin','2026-6-26',150,150.00),
   ('Cetrizine','2025-12-5',370,48.00),
   ('Dextromethorphan','2027-3-6',100,900.00),
   ('Fluconazole','2027-7-20',42,250.00);
 
 UPDATE Medicine
-Set Quantity_Available = 200,
+SET Quantity_Available = 200,
 Price_for_each = 160.00
 WHERE Medicine_ID = 1;
 
