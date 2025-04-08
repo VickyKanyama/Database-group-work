@@ -24,4 +24,6 @@ Select *from Medicine;
 
 drop table Medicine;
 
-
+Set Quantity_Available = 200,
+Price_for_each = 160.00
+where Medicine_ID = 1;
