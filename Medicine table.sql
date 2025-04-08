@@ -20,10 +20,17 @@ Insert into Medicine(Medicine_ID,Medicine_Name,Date_Supplied,Expiry_Date,Quantit
   ('3','Dextromethorphan','complete','2027-3-6',100,900.00,''),
  ('4','Fluconazole','Pending','2027-7-20',42,250.00,'');
 
+Set Quantity_Available = 200,
+Price_for_each = 160.00
+where Medicine_ID = 1;
+
+Create index
+idx_Medicine_Name ON
+Medicine (Medicine_Name);
+Select *From  Medicine
+  where Medicine_Name = 'Asprin';;
+
 Select *from Medicine;
 
 drop table Medicine;
 
-Set Quantity_Available = 200,
-Price_for_each = 160.00
-where Medicine_ID = 1;
