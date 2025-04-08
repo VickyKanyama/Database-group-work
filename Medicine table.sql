@@ -22,16 +22,7 @@ Insert into Medicine(Medicine_ID,Medicine_Name,Date_Supplied,Expiry_Date,Quantit
 
 Select *from Medicine;
 
-Create table Supplier(
-Supplier_ID int not null,
-Sup_Name varchar(20)not null,
-Email varchar(25)not null,
-Address varchar(150),
-Phone_No varchar(10)not null,
-primary key (Supplier_ID),
-Medicine_ID int not null);
-
-Describe Supplier;
+drop table Medicine;
 
 Alter table Medicine
 Add Constraint FK_Medicine_Supplier Foreign Key (Supplier_ID) references Medicine(Medicine_ID)
