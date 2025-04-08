@@ -1,7 +1,7 @@
 CREATE TABLE Employee (
     Emp_ID INT AUTO_INCREMENT PRIMARY KEY,
-    Emp_Name VARCHAR(35) NOT NULL,
-    Department VARCHAR(100) NOT NULL,
+    Emp_Name VARCHAR(255) NOT NULL,
+    Department VARCHAR(255) NOT NULL,
     Phone VARCHAR(20) NOT NULL,
     Email VARCHAR(100) NOT NULL
 );
@@ -24,4 +24,4 @@ WHERE Emp_ID = 2;
 
 SELECT Emp_ID, Emp_Name, Department, Phone, Email
 FROM Employee
-WHERE Address LIKE '%A';
+WHERE Emp_Name LIKE '%A';
