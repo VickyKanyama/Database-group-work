@@ -9,6 +9,7 @@ INSERT INTO managers (manager_name, email, phone_number)
 VALUES 
 ('John Were', 'john.were@cityhospital.org', '0746753743'),
 ('Jane Smith', 'jane.smith@cityhospital.org', '0756473921'),
+('Jane Smith', 'jane.smith@cityhospital.org', '0712506739'),
 ('Emily Turner', 'emily.turner@cityhospital.org', '0739821754'),
 ('Mark Johnson', 'mark.johnson@cityhospital.org', '0726472839');
 SELECT * FROM managers;
