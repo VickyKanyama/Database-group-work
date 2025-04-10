@@ -51,7 +51,7 @@ CREATE TABLE stock_management (
 );
 
     
-INSERT INTO Employee (Emp_Name, Department, Phone, Email)
+INSERT INTO Doctor(Doc_Name, Department, Phone, Email)
 VALUES
 ('Lucy Nduta', 'Optician', '0712345678', 'lucy.nduta@cityhospital.org'),
 ('Brian Otieno', 'Vascular Surgery', '0723456789', 'brian.otieno@cityhospital.org'),
@@ -95,21 +95,20 @@ VALUES
     (1, -50, 'usage'),
     (2, -30, 'usage'),
     (1, 100, 'supply');
-    
-ALTER TABLE Employee ADD CONSTRAINT unique_phone UNIQUE (Phone);
-ALTER TABLE Employee ADD CONSTRAINT unique_email UNIQUE (Email);
 
-CREATE INDEX idx_email ON Employee (Email);
-SELECT*FROM Employee WHERE Email='brian.otieno@cityhospital.org';
+ALTER TABLE Doctor ADD CONSTRAINT unique_phone UNIQUE (Phone);
+ALTER TABLE Doctor ADD CONSTRAINT unique_email UNIQUE (Email);
 
-UPDATE Employee
+CREATE INDEX idx_email ON Doctor (Email);
+SELECT*FROM Doctor WHERE Email='brian.otieno@cityhospital.org';
+
+UPDATE Doctor
 SET Department = 'Pharmacy'
-WHERE Emp_ID = 2;
+WHERE Doctor_ID = 2;
 
-SELECT Emp_ID, Emp_Name, Department, Phone, Email
-FROM Employee
-WHERE Emp_Name LIKE '%A';
-
+SELECT Doctor_ID, Doc_Name, Department, Phone, Email
+FROM Doctor
+WHERE Doc_Name LIKE '%A';
 SELECT * FROM managers;
 
 UPDATE managers
