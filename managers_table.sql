@@ -1,7 +1,7 @@
 CREATE TABLE managers (
     manager_id INT AUTO_INCREMENT PRIMARY KEY,
     manager_name VARCHAR(100) NOT NULL,
-    email VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL
 );
 
 INSERT INTO managers (manager_name, email)
