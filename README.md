@@ -1,5 +1,6 @@
 # Database-group-work
 STOCK MANAGEMENT DATABASE DEVELOPING
+
 Group members
 1.	168010-Vicky Kanyama.
 2.	 200159 – Juliet Nyakiamo.
