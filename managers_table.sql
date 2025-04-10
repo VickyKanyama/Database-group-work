@@ -26,6 +26,7 @@ VALUES
 ((SELECT manager_id FROM managers WHERE email = 'mark.johnson@cityhospital.org'), '0726472839');
 
 SELECT * FROM managers;
+SELECT * FROM manager_phone_numbers;
 
 UPDATE manager_phone_numbers
 SET phone_number = '0746610394'
